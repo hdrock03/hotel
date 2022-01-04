@@ -1,0 +1,118 @@
+ /* Reset > * matlab sara kuch ko select kr lie h */
+ * {
+     margin:0;
+     padding:0;
+     box-sizing: border box;
+ }
+
+ /* Main styling */
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+/* underine hatane ke lie text decoration none kiye */
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+h1, h2, h3{
+    padding-bottom:20px;
+}
+
+/* 10px->top & bottom and 0 for left and right */
+p{
+    margin: 10px 0; 
+}
+/* utility container */
+.container{
+    margin:auto;
+    max-width:1200px;
+    padding:0 20px
+}
+.text-primary{
+    color: #f7c08a;
+}
+
+.lead{
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;/* mtlv iska height and width aa jayega */
+    font-size: 18px;
+    color: #fff;
+    background:#333;
+    padding: 13px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;/* mtlb jb button pe jaoge to click krne wala ungli aa jayega */
+}
+/* mtlv jb hover krega to color chnge hga */
+.btn:hover{
+   background-color:#f7c08a;
+   color: #333;
+}
+/* Navbar */
+
+#navbar {
+    background-color: #333;
+    color:#fff;
+    overflow: auto;
+}
+
+/* since inside navbar there are links so inorder to show text we should configure a tag */
+#navbar a{
+    color: #fff;
+}
+
+#navbar h1{
+    float:left;
+    padding-top: 20px;
+}
+/* list-style: none se list ke pass wala dot khatm ho jata h */
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+/* float left se column me home about contact tha to row me aa gya */
+#navbar ul li{
+    float:left;
+}
+
+#navbar ul li a{
+    display:block;
+    padding:20px;
+    text-align: center;
+}
+
+/* hover krne ka method */
+#navbar ul li a:hover{
+    background: #444;
+    color:red;
+}
+
+/* showcase => yaha no repeat mtlab picture repeat nh hga, center mtlv center me jayega / cover mtlab pura screen ko cover krega. basically humlog background ka 5 property
+ek sath use kr rhe h */
+#showcase{
+    background: url('./picture/showcase.jpg') no-repeat center center/cover;
+    /* background-color: pink; */
+    height: 600px
+}
+/* kisi id/class ke under koi id/class ho to usko access krne ke lie . ya # use krenge */
+#showcase .showcase-content {
+    text-align: center;
+    padding-top:10px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p{
+    padding-bottom: 20px;
+    line-height:1.7em;
+}
