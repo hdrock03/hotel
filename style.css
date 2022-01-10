@@ -36,6 +36,10 @@ p{
     color: #f7c08a;
 }
 
+.bg-dark{
+    background: black;
+}
+
 .lead{
     font-size: 20px;
 }
@@ -54,6 +58,10 @@ p{
 .btn:hover{
    background-color:#f7c08a;
    color: #333;
+}
+.btn-light{
+    background: #f4f4f4;
+    color:#333;
 }
 /* Navbar */
 
@@ -97,9 +105,9 @@ p{
 /* showcase => yaha no repeat mtlab picture repeat nh hga, center mtlv center me jayega / cover mtlab pura screen ko cover krega. basically humlog background ka 5 property
 ek sath use kr rhe h */
 #showcase{
-    background: url('./picture/showcase.jpg') no-repeat center center/cover;
+    background: url('./picture/pic-1.jpg') no-repeat center center/cover;
     /* background-color: pink; */
-    height: 600px
+    height: 600px;
 }
 /* kisi id/class ke under koi id/class ho to usko access krne ke lie . ya # use krenge */
 #showcase .showcase-content {
@@ -115,4 +123,26 @@ ek sath use kr rhe h */
 #showcase .showcase-content p{
     padding-bottom: 20px;
     line-height:1.7em;
+}
+
+/* Home Info */
+#home-info{
+    height:400px;
+}
+
+.info-img{
+    float: left;
+    width: 50%;
+    background: url('./picture/showcase.jpg') no-repeat;
+    min-height: 100%;
+
+}
+
+#home-info .info-content{
+    float: right;
+    width:50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
 }
